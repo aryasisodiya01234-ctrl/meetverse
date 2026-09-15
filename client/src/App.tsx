@@ -7,6 +7,9 @@ import Home from "@/pages/home";
 import PreMeeting from "@/pages/pre-meeting";
 import Meeting from "@/pages/meeting";
 import NotFound from "@/pages/not-found";
+import ShootsResult from "@/pages/studio/shoots-result";
+import EditStudio from "@/pages/studio/edit-studio";
+import VideoEditor from "@/pages/studio/video-editor";
 
 function Router() {
   return (
@@ -14,6 +17,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/pre-meeting" component={PreMeeting} />
       <Route path="/meeting" component={Meeting} />
+      <Route path="/studio/shoots" component={ShootsResult} />
+      <Route path="/studio/edit" component={EditStudio} />
+      <Route path="/studio/video" component={VideoEditor} />
       <Route component={NotFound} />
     </Switch>
   );
